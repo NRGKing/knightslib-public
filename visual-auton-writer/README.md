@@ -39,9 +39,9 @@ If you would like to contribute, please fork the project and propose your change
 #### 1. New Features
 If you have any ideas or requests for features, please create an enhancement request in the GitHub repository. If you would like to implement this, you are welcome to. However, even if you can't, we will still consider feature requests. This does mean that we might have to reject some features that don't fit with the project.
 #### 2. Bugs
-If you find any bugs with the library, please open an issue on GitHub.
+If you find any bugs with the writer, please open an issue on GitHub.
 #### 3.  Commenting
-Please comment all functions in header files with doxygen comments. Code should also be readable without comments (descriptive variable names, . For a more detailed guide, follow one such as [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/). 
+Code should also be readable without comments (descriptive variable names, . For a more detailed guide, follow one such as [this](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/). 
 
 Thank you for considering contributing to our library! Most of the current work has been done by a single person, so any help is appreciated.
 
