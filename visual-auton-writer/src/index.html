@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body oncontextmenu="return false;">
+  <link rel="stylesheet" href="styles.css">
+  <div class="frame main-background">
+    <div class="shape frame route-menu">
+      <h1 class="menu-title" id="route-menu-title">Movements</h1>
+      <form class="on-menu" id="add-item-menu">
+        <select class="dropdown" id="add-item-type">
+          <option class="dropdown-item" value="lateral">Lateral</option>
+          <option class="dropdown-item" value="turn">Turn</option>
+          <option class="dropdown-item" value="command">Command</option>
+        </select>
+        <input type="text" class="input-box" id="specific-val-input" placeholder="Value">
+        <input type="text" class="input-box" id="end-tolerance-input" placeholder="End Tolerance">
+        <input type="text" class="input-box" id="timeout-input" placeholder="Timeout">
+        <input class="submit-item" type="submit" value="ADD ITEM" id="add-item-submit">
+      </form>
+      <div class="on-menu" id="movement-list">
+      </div>
+    </div>
+    <div class="shape frame configuration">
+      <h1 class="menu-title" id="route-menu-title">Configuration</h1>
+      <form class="on-menu" id="configure-item-menu">
+        <h2 class="menu-title" id="curr-editing">Editing: none</h2>
+        <input type="text" class="input-box" id="end-tolerance-change" placeholder="End Tolerance">
+        <input type="text" class="input-box" id="timeout-change" placeholder="Timeout">
+        <input type="text" class="input-box" id="specific-change" placeholder="Specific">
+        <input class="submit-item" type="submit" value="CHANGE" id="change-item-submit">
+      </form>
+      <form class="on-menu" id="edit-start-pos">
+        <h2 class="menu-title" id="start-pos-title">Start Position</h2>
+        <input type="text" class="input-box" id="start-pos-x" placeholder="X">
+        <input type="text" class="input-box" id="start-pos-y" placeholder="Y">
+        <input type="text" class="input-box" id="start-pos-heading" placeholder="Degrees">
+        <input class="submit-item" type="submit" value="CHANGE" id="start-pos-submit">
+      </form>
+      <button class="submit-item" id="delete_button">DELETE PREVIOUS</button>
+    </div>
+    <!-- rect: his_field -->
+    <p class="menu-title" id="curr-position"></p>
+    <div class="field_img" id="field">
+    </div>
+    <div class="curve-container" id="curve-container">
+      <span id="bot-render"></span>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

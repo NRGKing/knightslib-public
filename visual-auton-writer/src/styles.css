@@ -1,0 +1,494 @@
+
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background: linear-gradient(to bottom, rgb(33, 33, 39) 100%,rgba(29, 29, 32, 1) 100%);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-node { background-clip: text !important; -webkit-background-clip: text !important; }
+
+ ::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141416;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #837f88;
+  border-radius: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+  height: 5px;
+} 
+
+.main-background {
+  position: relative;
+  width: 1280px;
+  height: 700px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.field_img {
+  position: absolute;
+  left: 385px;
+  top: 87px;
+  width: 514px;
+  height: 514px;
+  background-color: #292A2D;
+  border-radius: 0px;
+  z-index: 3;
+}
+
+.configuration {
+  position: absolute;
+  left: 937px;
+  top: 77px;
+  width: 300px;
+  height: 500px;
+  background: #141416;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.route-menu {
+  position: absolute;
+  left: 19px;
+  top: 20px;
+  width: 328px;
+  height: 640px;
+  background: #141416;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-title {
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: break-spaces;
+  text-rendering: geometricPrecision;
+  caret-color: rgba(201, 207, 217, 1);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+}
+
+.on-menu {
+  background: #141416;
+  border: 1px solid #2c2c31;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.on-menu-movement-item {
+  background: #141416;
+  border: 1px solid #2c2c31;
+  border-radius: 3px;
+  overflow: hidden;
+  top: 0px;
+  width: 90%;
+  margin-top: 10px;
+  
+  margin-top: 10px;
+  height: 35px;
+  margin-left: 15px;
+  margin-right: auto;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.dropdown {
+  background: #141416;
+  border: 1px solid #2c2c31;
+  border-radius: 3px;
+  overflow: hidden;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dropdown-item {
+  background: #141416;
+  border: 1px solid #2c2c31;
+  overflow: hidden;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.submit-item {
+  background: #1f1f22;
+  border: 1px solid #2c2c31;
+  border-radius: 10px;
+  overflow: hidden;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+}
+
+.input-box {
+  background: #1f1f22;
+  border: 1px solid #2c2c31;
+  border-radius: 2px;
+  overflow: hidden;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 17px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.curve-container {
+  width: 100%;
+  height: 100%;
+  position: global;
+  top: 0px;
+  left: 0px;
+  /* overflow: visible; */
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(221, 221, 221);
+  opacity: 80%;
+  border-radius: 50%;
+  z-index: 10;
+  outline: solid rgb(80, 80, 80) 2px;
+}
+
+.control-point {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(30, 255, 97);
+  border-radius: 50%;
+  outline: solid rgb(80, 80, 80) 2px;
+  z-index: 15;
+}
+
+.path-list-item {
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgba(201, 207, 217, 1);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*Individual items*/
+
+#bot-render {
+  position: absolute;
+  background-color: #1f1f22;
+  opacity: 20%;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  z-index: 10;
+  
+}
+
+#route-menu-title {
+  position: absolute;
+  left: 24px;
+  top: 0px;
+  width: 276px;
+  height: 26px;
+}
+
+#add-item-menu {
+  position: absolute;
+  left: 24px;
+  top: 55px;
+  width: 276px;
+  height: 170px;
+}
+
+#configure-item-menu {
+  position: absolute;
+  left: 5%;
+  top: 55px;
+  width: 90%;
+  height: 230px;
+}
+
+#movement-list {
+  position: absolute;
+  left: 24px;
+  top: 240px;
+  width: 276px;
+  height: 375px;
+}
+
+#add-item-type {
+  position: absolute;
+  left: 10%;
+  top: 15px;
+  width: 80%;
+  height: 40px;
+}
+
+#add-item-submit {
+  position: absolute;
+  left: 15%;
+  bottom: 20px;
+  width: 70%;
+  height: 30px;
+}
+
+#change-item-submit {
+  position: absolute;
+  left: 15%;
+  bottom: 10px;
+  width: 70%;
+  height: 30px;
+}
+
+#specific-val-input {
+  position: absolute;
+  left: 5%;
+  bottom: 60px;
+  width: 35%;
+  height: 40px;
+  z-index: 10;
+}
+
+#end-tolerance-input {
+  position: absolute;
+  left: 45%;
+  bottom: 60px;
+  width: 20%;
+  height: 40px;
+}
+
+#timeout-input {
+  position: absolute;
+  left: 70%;
+  bottom: 60px;
+  width: 25%;
+  height: 40px;
+}
+
+#end-tolerance-change {
+  position: absolute;
+  right: 5%;
+  top: 40px;
+  width: 90%;
+  height: 40px;
+}
+
+#timeout-change {
+  position: absolute;
+  right: 5%;
+  top: 90px;
+  width: 90%;
+  height: 40px;
+}
+
+#specific-change {
+  position: absolute;
+  right: 5%;
+  top: 140px;
+  width: 90%;
+  height: 40px;
+}
+
+#movement-list {
+  overflow-y:scroll;
+}
+
+#curr-editing {
+  top: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#delete_button {
+  position: absolute;
+  left: 15%;
+  bottom: 25px;
+  width: 70%;
+  height: 30px;
+
+  background: #1f1f22;
+  border: 1px solid #2c2c31;
+  border-radius: 10px;
+  overflow: hidden;
+
+  color: rgba(201, 207, 217, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgb(158, 179, 212);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+}
+
+#curr-position {
+  position: absolute;
+  left: 395px;
+  top: 60px;
+  display: none;
+
+  font-size: 13px;
+}
+
+#field {
+  background: url('his_match.png') no-repeat center center / cover;
+
+}
+
+#start-pos-title {
+  top: 8px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#edit-start-pos {
+  position: absolute;
+  left: 5%;
+  top: 300px;
+  width: 90%;
+  height: 125px;
+}
+
+#start-pos-x {
+  position: absolute;
+  left: 5%;
+  bottom: 48px;
+  width: 25%;
+  height: 40px;
+}
+
+#start-pos-y {
+  position: absolute;
+  left: 35%;
+  bottom: 48px;
+  width: 25%;
+  height: 40px;
+}
+
+#start-pos-heading {
+  position: absolute;
+  left: 65%;
+  bottom: 48px;
+  width: 30%;
+  height: 40px;
+}
+
+#start-pos-submit {
+  position: absolute;
+  left: 15%;
+  bottom: 10px;
+  width: 70%;
+  height: 30px;
+}
